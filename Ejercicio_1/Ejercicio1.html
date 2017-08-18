@@ -11,25 +11,37 @@
 <style>
 
 body {
-    background-image: url('C:/Users/usuario/Desktop/awdAlianzaPro/Ejercicio_1/imagen.jpg');
+    background-image: url('imagen.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center; 
 }
 
-.enelcentro {
-
-text-align:center;
-
+.container {
+    text-align:  center;   /* no funciona con align-content */
+    height: 900px;
+    width: 100%;
 }
 
 .imgcentro {
-
-background-repeat: repeat-y;
-
+    background: url('descarga.png');
+        background-repeat: repeat-y;
+    height: 100%;
+    width: 30%;
 
 }
+
+.cubreTodo { 
+        
+        width: 100%;
+        height: 600px;
+        background-image: url(descarga.png),url(imagen.jpg);
+        background-repeat: no-repeat, no-repeat;   /*  se puede borrar, no tiene efecto en este ejemplo*/
+        background-size: cover;
+  
+    }
+
 </style>
 
 </head>
@@ -37,12 +49,12 @@ background-repeat: repeat-y;
 <body>
 
 
-<div class="enelcentro">
-
-<img class="imgcentro" src="imagen2.jpg" alt="Smiley face" height="100" width="100">
-
+<div class="container">
+    <img class="imgcentro">
 </div>
 
+<div class="cubreTodo">
+</div>
 
 
 </body>
