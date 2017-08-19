@@ -1,0 +1,113 @@
+
+@media screen and (max-width: 320px) {
+
+.contenedor {
+
+font-size: 0.6em;
+}
+
+}
+
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    
+.contenedor {
+
+font-size: 0.8em;
+}
+}
+
+
+@media screen and (min-width: 769px) {
+    
+.contenedor {
+
+font-size: 1.2em;
+
+}
+}
+
+
+
+.contenedor1 {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.contenedorpadre1 {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+.contenedorpadre2 {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+
+
+.contenedor2 {
+    background-color: red;
+    align-content: center;
+    overflow: visible;
+    width: 33.33%;
+    height: 33%;
+    float: right;
+    overflow: hidden;
+
+}
+
+.contenedor3 {
+    background-color: white;
+    align-content: center;
+    overflow: visible;
+    width: 33.33%;
+    height: 33%;
+    float: right;
+    overflow: hidden;
+
+}
+
+.contenedor4 {
+    background-color: magenta;
+    align-content: center;
+    overflow: visible;
+    width: 33.33%;
+    height: 33%;
+    float: right;
+
+}
+
+.contenedor5 {
+    background-color: yellow;
+    align-content: center;
+    overflow: visible;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+
+.contenedor6 {
+    background-color: darkorange;
+    align-content: center;
+    overflow: visible;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+
+.contenedor7 {
+    background-color: teal;
+    color: white;
+    align-content: center;
+    overflow: visible;
+    width: 100%;
+    height: 50%;
+    float: right;
+}
+    
+
+

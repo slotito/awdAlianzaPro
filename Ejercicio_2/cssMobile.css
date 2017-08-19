@@ -1,0 +1,28 @@
+@media screen and (max-width: 320px) {
+
+    .letra {
+    color: white;
+    background-color: black;
+
+    }
+}
+
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    
+    .letra {
+    color: black;
+    background-color: white;
+
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    
+    .letra {
+    color: white;
+    background-color: black;
+
+    }
+}
