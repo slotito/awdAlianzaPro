@@ -1,122 +1,90 @@
-
-
-
-@media screen and (max-width: 320px) {
-
-.contenedor {
-
-font-size: 0.6em;
-
+body {
+    margin:0;
+    padding: 0;
+    height: 100%;
 }
 
-}
-
-
-@media screen and (min-width: 321px) and (max-width: 768px) {
-    
-.contenedor {
-
-font-size: 0.8em;
-}
-}
-
-
-@media screen and (min-width: 769px) {
-    
-.contenedor {
-
-    font-size: 1.0em;
-
-}
-}
-
-.contenedor {
-    padding: 2%;
+.padre {
+    position: relative;
     border: 1px solid #090A09;
+    box-sizing: border-box; 
+    margin: 1%;
+    width: 100%;
+}
+
+.padre1 {
+    height: 200px;
+}
+
+.padre2 {
+    height: 100px;
+}
+
+
+.padre3 {
+    height: 200px; 
+
+}
+
+.padre4 {
+    
+    height: 200px;
+    
+}
+
+.hijo {
+    padding: 1%;
+    position: relative;
+    box-sizing: border-box;
+    height: 90%;
+    
+}
+
+section {
+    margin: 0;
+    height: 100%;
+    padding: 0.5%;
+    overflow: hidden;
+}
+
+.hijo1 {
     margin: 0.5%;
 }
 
-
-
-.contenedor1 {
-    width: 100%;
-    background-color: blue;
-    overflow: hidden;
-    margin: 1%;
+.hijos2 {
+    width: 32%;
+    height: 98%;
+    float: left;
+    margin: 0.5%;
+   
 }
 
-.contenedorpadre1 {
-    width: 100%;
-    border: 10px solid #090A09;
-    background-color: tomato;
+.hijos3 {
+    width: 48%;
+    height: 97%;
     
-}
-.contenedorpadre2 {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
+    float: left;
+    margin: 0.5%;
+     
 }
 
+.hijo1 {
+    background-color: #E18E14;
+}   
 
-.contenedor2 {
-    background-color: red;
-    align-content: center;
-    overflow: visible;
-    width: 25%;
-    height: 33%;
-    float: right;
-    overflow: hidden;
+.hijo2 {
+    background-color: navajowhite;
+}   
 
-}
+.hijo3 {
+    background-color:aqua;
+}   
 
-.contenedor3 {
-    background-color: white;
-    align-content: center;
-    overflow: visible;
-    width: 25%;
-    height: 33%;
-    float: right;
-    overflow: hidden;
+.hijo4 {
+    background-color: azure;
+}   
 
-}
-
-.contenedor4 {
-    background-color: magenta;
-    align-content: center;
-    overflow: visible;
-    width: 25%;
-    height: 33%;
-    float: right;
-
-}
-
-.contenedor5 {
-    background-color: yellow;
-    align-content: center;
-    overflow: visible;
-    width: 50%;
-    height: 50%;
-    float: right;
-}
-
-.contenedor6 {
-    background-color: darkorange;
-    align-content: center;
-    overflow: visible;
-    width: 50%;
-    height: 50%;
-    float: right;
-}
-
-.contenedor7 {
-    background-color: teal;
-    color: white;
-    align-content: center;
-    overflow: visible;
-    width: 100%;
-    height: 50%;
-    float: right;
-}
+.hijo7 {
+    background-color: darkgoldenrod;
     
-
-
+}   
