@@ -1,0 +1,86 @@
+    <!DOCTYPE HTML>
+<html lang="en" ng-app ng-init="persona={nombre:'Julio',apellido:'Santos'};autos=[{marca:'Fiat',color: 'Verde'},{marca: 'bmw',color:'Amarillo'},{marca: 'Ferrari',color: 'Rojo'},{marca: 'Porche',color: 'Negro'},{marca: 'Porche',color: 'Azul'},{marca: 'Porche',color: 'Violeta'}]">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Angular App</title>
+
+
+<script src="../core/angular.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <h4>1.1</h4>
+    <div>Persona: {{persona.nombre}} {{persona.apellido}}</div>
+    <hr>
+
+    <h4>1.2</h4>
+    <div>Cruzando el semáforo con mi auto Ferrari de colora: {{autos[2].color}}</div>
+    <hr>
+
+    <h4>1.3</h4>
+    <div>
+        <p>Escriba el nombre:</p>
+        <p>Nombre: <input type="text" ng-model="primerNombre"></p>
+        <p>Escribiste: {{ primerNombre }}</p>
+    </div>
+    <div>Tomas/no Tomas: {{primerNombre === 'Tomas' ? autos[0].color : autos[1].marca}}</div>
+    <hr>
+    
+    <h4>1.3 extra</h4>
+    <div ng-repeat="auto in autos">
+        <div ng-switch="auto.marca">
+            <div ng-switch-when="bmw">{{auto.color}}</div>
+        </div>
+    </div>
+    <hr>
+
+    <h4>1.4</h4>
+    <div ng-repeat="auto in autos">
+        <p>El auto es marca {{ auto.marca }} y el color es {{ auto.color | uppercase }}</p>
+    </div>
+    <hr>
+
+    <h4>1.5</h4>
+    <section>
+        <div>
+            Haga click para que se haga magia<input type="checkbox" ng-model="chequeo">
+            <div ng-show="chequeo">
+                <img src="escudo.jpg" alt="lanada" width="100" height="100">
+            </div>
+        </div>
+        <div ng-hide="chequeo">
+            <br><br><br><br><br><br>
+        <div>
+    </section>
+    <hr>
+
+    <h4>1.6</h4>
+    Color de los autos marca Porche:
+    <div ng-repeat="auto in autos">
+        <ul>
+            <li ng-if="auto.marca == 'Porche'"> {{auto.color}}</li> 
+        </ul>
+
+    </div>
+   <!-- 
+
+	<div>Marca: {{autos[0].marca}}</div>
+    <div ng-switch="autos[0].marca">
+        <div ng-switch-when="Fiat">{{autos[0].color}}</div>
+    </div>
+
+-->
+
+
+    <script type="text/javascript" scr="script.js">
+    
+    </script>
+</body>
+
+</html>

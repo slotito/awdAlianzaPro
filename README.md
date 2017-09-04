@@ -1,2 +1,0 @@
-# awdAlianzaPro
-Aplicaciones Web Dinamicas
