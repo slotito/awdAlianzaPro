@@ -1,0 +1,44 @@
+.container {
+
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+#linea1, #linea2 {
+
+    padding: 0;
+}
+
+
+.sectionUno {
+    background-image: url('imagenes/uru2.jpg');
+}
+.caja1 {
+    background-image: url('imagenes/mvd1.jpg');
+}
+.caja2 {
+    background-image: url('imagenes/uru1.jpg');
+
+}
+
+@media only screen and (min-width: 297px){
+    .container {
+        width: 15vh;
+    }
+
+    .containerCon {
+        padding-left: 3vh;
+    }
+}
+
+@media only screen and (max-width: 296px){
+    .container {
+        width: 15vh;
+    }
+
+    .containerCon {
+        padding-left: 2vh;
+    }
+}
+

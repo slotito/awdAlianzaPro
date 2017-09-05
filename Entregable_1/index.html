@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="E:/Programación/bootstrap/css/bootstrap.min.css">
+-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="estilo2.css">
+<link rel="stylesheet" media="only screen and (max-width: 320px)" href="estilo_mobile.css" >
+<link rel="stylesheet" media="only screen and (min-width: 320px) and (max-width: 768px)" href="estilo_tablet.css" >
+
+
+
+
+<title>
+</title>
+
+</head>
+
+<body>
+
+
+
+    <div class="principal">
+
+        <div class="caja1"></div>
+        <div class="caja2"></div>
+        <div class="caja3">
+        <marquee direction="up" style="height:40vh">
+            Nací en Rivera, el 3 de Marzo de 1973
+            <br><br>
+            Soy casado y tengo 2 hijas: Victoria, Eugenia
+            <br><br>
+            Actualmente vivo en Montevideo<br>
+            </marquee>
+        
+        <marquee direction="left" style="height:10vh"><strong>Haga scroll hacia abajo para ver mas información</strong></marquee>
+        </div>
+
+        <div class='nombreppal'>Hugo Sergio Lotito</div>
+
+        <section class="parallax sectionUno">
+        </section>
+
+
+    <section class="parallax sectionDos">
+
+    <div class="containerOpaca">
+                
+            <img id="imgFoto1" class="img-responsive" src="imagenes/formacionAcademica1.jpg" title="Haga Click para Volver" alt="Formación Académica" onclick="saleFP()">
+            <img id="imgFoto2" class="img-responsive" src="imagenes/cualquiera.jpg" title="Haga Click para Volver" alt="Experiencia Laboral" onclick="saleEL()">
+            <img id="imgFoto3" class="img-responsive" src="imagenes/cualquiera.jpg" title="Haga Click para Volver" alt="Idiomas" onclick="saleIdiomas()">
+            <img id="imgFoto4" class="img-responsive" src="imagenes/cualquiera.jpg" title="Haga Click para Volver" alt="Otros Perfiles" onclick="salePerfiles()">
+            <img id="imgFoto5" class="img-responsive" src="imagenes/cualquiera.jpg" title="Haga Click para Volver" alt="Proyectos" onclick="saleProyectos()">
+            <img id="imgFoto6" class="img-responsive" src="imagenes/cualquiera.jpg" title="Haga Click para Volver" alt="Referencias" onclick="saleReferencias()">
+
+    </div>
+
+    
+    <div class="containerGen">
+
+        <div class="containerCon">
+
+                <div class="container">
+                    <div class="div-img">
+                        <img class="img" src="imagenes/fototitulo1.jpg" title="Haga Click para acceder" alt="Formación Académica" onclick="muestraFP()">
+                        <div class="text">Formación Profesional</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="div-img" >
+                        <img class="img" src="imagenes/fototitulo2.jpg" title="Haga Click para acceder" alt="Experiencia Laboral" onclick="muestraEL()">
+                        <div class="text">Experiencia Laboral</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="div-img" >
+                        <img class="img" src="imagenes/fototitulo3.png" title="Haga Click para acceder" alt="Idiomas" onclick="muestraIdiomas()">
+                        <div class="text">Idiomas</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="div-img">
+                        <img class="img" src="imagenes/fototitulo4.jpg" title="Haga Click para acceder" alt="Otros Perfiles" onclick="muestraPerfiles()">
+                        <div class="text">Otros Perfiles</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="div-img">
+                        <img class="img" src="imagenes/fototitulo5.jpg" title="Haga Click para acceder" alt="Otros Perfiles" onclick="muestraProyectos()">
+                        <div class="text">Proyectos</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="div-img">
+                        <img class="img" src="imagenes/fototitulo6.jpg" title="Haga Click para acceder" alt="Otros Perfiles" onclick="muestraReferencias()">
+                        <div class="text">Referencias</div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+    </section>
+    </div>
+
+
+    <script type="text/javascript" scr="script.js">
+
+    $(document).ready(function(){
+        $("#imgFoto1").hide();
+        $("#imgFoto2").hide();
+        $("#imgFoto3").hide();
+        $("#imgFoto4").hide();
+        $("#imgFoto5").hide();
+        $("#imgFoto6").hide();
+    });
+
+
+    function muestraFP() {
+        $(".containerOpaca").slideDown("slow");
+        $("#imgFoto1").show();
+        $("body").css("overflow", "hidden");  // Impide scroll
+    }
+
+
+    function saleFP(){
+       $(".containerOpaca").slideUp("fast");
+        $("#imgFoto1").hide();
+        $("body").css("overflow", "scroll"); // habilita scroll
+    }
+
+    function muestraEL() {
+        $(".containerOpaca").slideDown("slow");
+        $("#imgFoto2").show();
+        $("body").css("overflow", "hidden");  // Impide scroll
+    }
+
+
+    function saleEL(){
+        $(".containerOpaca").slideUp("fast");
+        $("#imgFoto2").hide();
+        $("body").css("overflow", "scroll"); // habilita scroll
+    }
+
+    function muestraIdiomas() {
+        $(".containerOpaca").slideDown("slow");
+        $("#imgFoto3").show();
+        $("body").css("overflow", "hidden");  // Impide scroll
+    }
+
+
+    function saleIdiomas(){
+        $(".containerOpaca").slideUp("fast");
+        $("#imgFoto3").hide();
+        $("body").css("overflow", "scroll"); // habilita scroll
+   }
+
+
+    function muestraPerfiles() {
+        $(".containerOpaca").slideDown("slow");
+        $("#imgFoto4").show();
+        $("body").css("overflow", "hidden");  // Impide scroll
+    }
+
+
+    function salePerfiles(){
+        $(".containerOpaca").slideUp("fast");
+        $("#imgFoto4").hide();
+        $("body").css("overflow", "scroll"); // habilita scroll
+   }
+
+    function muestraProyectos() {
+        $(".containerOpaca").slideDown("slow");
+        $("#imgFoto5").show();
+        $("body").css("overflow", "hidden");  // Impide scroll
+    }
+
+
+    function saleProyectos(){
+        $(".containerOpaca").slideUp("fast");
+        $("#imgFoto5").hide();
+        $("body").css("overflow", "scroll"); // habilita scroll
+   }
+
+    function muestraReferencias() {
+        $(".containerOpaca").slideDown("slow");
+        $("#imgFoto5").show();
+        $("body").css("overflow", "hidden");  // Impide scroll
+    }
+
+
+    function saleReferencias(){
+        $(".containerOpaca").slideUp("fast");
+        $("#imgFoto6").hide();
+        $("body").css("overflow", "scroll"); // habilita scroll
+   }
+
+    </script>
+</body>
+
+</html>

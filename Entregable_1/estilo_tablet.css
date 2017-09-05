@@ -1,0 +1,109 @@
+
+
+
+.container, .col, .row {
+
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+.container {
+    width: 33vh;
+    padding-top: 0;
+}
+
+.containerCon {
+    padding-left: 10vh;
+}
+
+#linea1, #linea2 {
+
+    padding: 5%;
+}
+
+.nombreppal {
+    font-size: 3em;
+}
+
+.sectionUno {
+    background-image: url('imagenes/uru1.jpg');
+}
+.caja1 {
+    background-image: url('imagenes/uru2.jpg');
+}
+.caja2 {
+    background-image: url('imagenes/mvd1.jpg');
+}
+
+.sectionDos {
+    height: 100vh;
+}
+
+
+@media only screen and (max-width: 650px){
+    .container {
+        width: 30vh;
+        padding-left: 0vh;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .containerCon {
+        padding-left: 5vh;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .containerCon {
+        padding-left: 4vh;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .container {
+        width: 25vh;
+        padding-left: 2vh;
+        padding-top: 5vh;
+        
+    }
+
+    .containerCon {
+        padding-left: 5vh;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .container {
+        width: 25vh;
+    }
+
+    .containerCon {
+        padding-left: 3vh;
+    }
+}
+
+@media only screen and (max-width: 405px){
+    .container {
+        width: 20vh;
+        padding-left: 1vh;
+        padding-top: 0vh;
+    }
+
+    .containerCon {
+        padding-left: 3vh;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .container {
+        padding-left: 0vh;
+        padding-top: 0vh;
+        width: 20vh;
+    }
+
+    .containerCon {
+        padding-top: 10vh;
+        padding-left: 8vh;
+    }
+}
