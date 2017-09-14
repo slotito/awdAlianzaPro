@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html ng-app="miAplica" >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script src="../core/angular.min.js"></script>
+
+<title>Ejercicio 3</title>
+
+</head>
+
+<body>
+
+ 
+    <div ng-controller="control1">
+        <br>
+        <br>
+        <input id="entrada" type="text" ng-model="memo" ng-focus="limpiaTexto()" placeholder="Escriba su memoria acá"><br>
+        <button type="button" ng-click="agregaItem()">Agregar</button>
+        <button type="button" ng-click="limpiarTodo()">Limpiar</button>
+        <h4>El nuevo item a agregar es <span style="color:red;">{{ memo }}</span> </h4>
+
+        <div >
+            <ul >
+                <li ng-repeat="x in lista | orderBy : x"><input type="text" value="{{x}}" ng-disabled="nohab" ng-blur="editaFin(x)">  <!-- ng-blur="nohab=true;">  -->
+                <button type="button" ng-click="eliminaItem(x)">eliminar</button>
+                <button type="button" ng-click="editaItem(x)" ng-model="nohab">editar</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <script type="text/javascript" scr="script.js">
+
+    var app = angular.module("miAplica",[]);
+
+    app.controller("control1",function($scope){
+
+        $scope.lista = [];
+        $scope.nohab = true;
+
+        $scope.agregaItem = function(){
+            if ($scope.memo.length>0){
+                nro = $scope.lista.indexOf($scope.memo);
+                if (nro==-1){
+                    $scope.lista.push($scope.memo);
+                    $scope.nohab = true;
+                }
+                $scope.memo="";
+            }
+
+        };
+
+        
+        $scope.eliminaItem = function(item){
+            console.log(item);
+            nro = $scope.lista.indexOf(item);
+            $scope.lista.splice(nro,1);
+        };
+
+        $scope.limpiaTexto = function(){    // En desuso
+            //document.getElementById("entrada").innerHTML = '';  // no funciona así (?)
+        };
+
+        $scope.limpiarTodo = function(){
+            $scope.lista.splice(0,$scope.lista.length);
+        };
+
+        $scope.editaFin = function(item){
+            console.log($scope.lista);
+            console.log(item);
+            console.log(document.getElementById("entrada").innerHTML);
+        };
+
+
+        $scope.editaItem = function(item){
+
+            console.log($scope.memo);
+
+/*
+            for (var ii=0; ii<$scope.lista.length;ii++){
+                console.log($scope.lista[ii]);
+                if ($scope.lista[ii]==item){
+                    $scope.nohab = false;
+                }else{
+                    $scope.nohab = true;
+                }
+            }
+*/
+
+            if ($scope.nohab == false){
+                $scope.nohab = true;
+            }else{
+                $scope.nohab = false;          
+            }
+
+
+        };
+
+    });
+
+ 
+    
+    
+    </script>
+</body>
+
+</html>
